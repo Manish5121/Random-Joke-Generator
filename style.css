@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-/* import font */
-
 * {
   box-sizing: border-box
     /* padding & border are in width & height */
@@ -8,8 +5,8 @@
 }
 
 body {
-  background-color: #C7F2A4;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: #9f68e0;
+  font-family: Arial, Helvetica, sans-serif; 
   display: flex;
   /* it will center allign the items */
   align-items: center;
@@ -25,45 +22,47 @@ body {
 
 
 .container {
-  background-color: azure;
   border-radius: 10px;
-  /* the curve in the corners */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
   padding: 50px 20px;
   /* what will be the size of the white box */
   max-width: 100%;
   width: 700px;
   text-align: center;
+  background-color: rgb(221, 236, 236);
+  /*
+  background: white;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );  
+*/
+  background: rgba(255, 255, 255, 0.38);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.33);
 }
 
 h3 {
+  font-weight: bolder;
   margin: 5;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   opacity: 5;
 
 }
 
-/*.joke 
-
-    font-size: 30px;
-    line-height: 40px;
-    margin: 50px auto;
-    max-width: 600px;
-
-    -webkit-transition: opacity .5s ease-in-out;
-    -moz-transition: opacity .5s ease-in-out;
-    -ms-transition: opacity .5s ease-in-out;
-    -o-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-
+.joke {
   font-size: 30px;
+  font-weight: bold;
   line-height: 40px;
   margin: 50px auto;
   max-width: 600px;
 }
-*/
+
 .btn {
-  background-color: #9f68e0;
+  background-color:  #541998;
   border: 0;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
@@ -73,13 +72,7 @@ h3 {
   font-size: 16px;
   padding: 14px 40px;
 }
-.btn:hover
-{
-  background-color: #a3d279;
-  font-weight: bold;
-  color: black;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
-}
+
 .btn:active {
   transform: scale(0.98);
   /* it will shrink while we click the button */
@@ -108,10 +101,6 @@ h3 {
   font-size: 2rem;
   color: #777;
 }
-.toggle i:hover {
-  font-size: 2.1rem;
-  color: rgb(41, 40, 40);
-}
 
 /* Dark mode styling*/
 body.dark {
@@ -120,9 +109,13 @@ body.dark {
 }
 
 body.dark .container {
-  background-color: rgb(21, 29, 29);
-  box-shadow: 0 10px 20px rgba(231, 228, 228, 0.925), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
-
+  background-color: rgb(70, 114, 114);
+  background: linear-gradient(to right, #4CA1AF, #2C3E50);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 body.dark .toggle {
@@ -134,22 +127,10 @@ body.dark .toggle i {
   color: #ffffff;
 }
 
-body.dark.toggle i:hover {
-  font-size: 2.1rem;
-  color: rgb(41, 40, 40);
-}
-
 body.dark .btn {
-  background-color: rgb(75, 70, 70);
+  background-color: rgb(99, 94, 94);
   box-shadow: 0 5px 15px rgba(255, 253, 253, 0.774), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
-  color: rgb(255, 255, 255);
-}
-
-body.dark .btn:hover
-{
-  background-color: #a3d279;
-  color: rgb(0, 0, 0);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
+  color: #fff;
 }
 
 body.dark .lds-ring div {
