@@ -1,6 +1,7 @@
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
     /* padding & border are in width & height */
+
 
 }
 
@@ -10,33 +11,28 @@ body {
   display: flex;
   /* it will center allign the items */
   align-items: center;
+  align-content: center;
   /* it will also center allign the elements */
   justify-content: center;
   /* it will center allign, otherwise it will be in left side */
   height: 100vh;
   /* what will be the height */
   margin: 0;
-
-
 }
 
 
 .container {
   border-radius: 10px;
   padding: 50px 20px;
+  
   /* what will be the size of the white box */
   max-width: 100%;
-  width: 700px;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
   text-align: center;
+
   background-color: rgb(221, 236, 236);
-  /*
-  background: white;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 2.5px );
-  -webkit-backdrop-filter: blur( 2.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );  
-*/
   background: rgba(255, 255, 255, 0.38);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -49,16 +45,15 @@ h3 {
   font-weight: bolder;
   margin: 5;
   letter-spacing: 1px;
-  opacity: 5;
-
+  opacity: 5
 }
 
 .joke {
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 40px;
-  margin: 50px auto;
-  max-width: 600px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
 }
 
 .btn {
@@ -70,7 +65,10 @@ h3 {
   cursor: pointer;
   /* cursor will change */
   font-size: 16px;
-  padding: 14px 40px;
+  padding: 20px 80px;
+  box-shadow: 1.2px 5px 5px rgb(9, 9, 9);
+  margin-top: 50px;
+ 
 }
 
 .btn:active {
@@ -82,6 +80,11 @@ h3 {
   outline: 0;
 }
 
+/* copy button */
+.copy_btn {
+  padding: 18px 20px;
+  margin-left: 10px;
+}
 
 .toggle {
   width: 4rem;
@@ -179,4 +182,34 @@ body.dark .lds-ring div {
   100% {
     transform: rotate(360deg);
   }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    background-color: azure;
+    border-radius: 10px;
+    /* the curve in the corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0, 0.1);
+    padding: 15px 15px;
+    /* what will be the size of the white box */
+    max-width: 100%;
+  
+   position: absolute;
+   align-items: center;
+    
+    text-align: center;
+    margin: 20px 35px;
+  }
+  .toggle{
+    width: 4rem;
+  height: 4rem;
+  background-color: #b9ec91;
+  position: initial;
+ 
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: rgba(135, 240, 87, 0.89) 0px 25px 50px -12px;
+  cursor: pointer;
+  }
 }
+

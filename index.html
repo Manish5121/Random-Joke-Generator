@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="4265826.ico">
+    <link rel="icon" href="4265826.ico" />
     <title>Random Jokes Generator</title>
     <link
       rel="stylesheet"
@@ -20,18 +20,20 @@
         <!-- to switch between light and dark mode-->
         <i class="far fa-sun"></i>
       </div>
-      <h3>Random Jokes Generator</h3>
-      <div id="joke" class="joke">Here's the joke for you</div>
-      <button id="btn" class="btn">Get another joke</button>
-
-      
+      <h1 id="main-joke-heading-in-h1">Random Jokes Generator</h1>
+      <hr style="width: 50%; color: black" />
+      <div id="joke" class="joke"><b>Here's the joke for you</b></div>
+      <button id="btn" class="btn" ><b>Get another joke</b></button>
+      <button id="copy_joke" class="copy_btn btn">
+        <i class="fa-regular fa-copy"></i>
+      </button>
     </div>
-    <div class="lds-ring" id = "loading">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <div class="lds-ring" id="loading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
     <script src="script.js"></script>
     <!-- Link JS -->
   </body>
